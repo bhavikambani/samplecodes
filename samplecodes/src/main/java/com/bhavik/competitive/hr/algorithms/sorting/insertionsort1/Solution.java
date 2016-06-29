@@ -5,9 +5,11 @@ import java.util.Scanner;
 /**
  * The Class Solution.
  * 
- * 5 2 4 6 8 3
+ * 5
+ * 2 4 6 8 3
  * 
  * @see https://www.hackerrank.com/challenges/insertionsort1
+ * 
  * @author Bhavik Aniruddh Ambani
  */
 public class Solution {
