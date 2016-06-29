@@ -1,0 +1,13 @@
+2016-06-27 14:21:43 IST - DEBUG [ ? - () -  ] - MyApp This is console log
+2016-06-27 14:21:43 IST - DEBUG [ MyApp - main() - 60 ] - com.bhavik.misc.log4j2.MyApp
+2016-06-27 14:21:43 IST - DEBUG [ ? - () -  ] - MyApp Thread started with Logger
+2016-06-27 14:21:43 IST - TRACE [ MyApp - main() - 63 ] - 0 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-06-27 14:21:43 IST - TRACE [ MyApp - main() - 63 ] - 1 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-06-27 14:21:43 IST - TRACE [ MyApp - main() - 63 ] - 2 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-06-27 14:21:43 IST - TRACE [ MyApp - main() - 63 ] - 3 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-06-27 14:21:43 IST - TRACE [ MyApp - main() - 63 ] - 4 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-06-27 14:21:43 IST - TRACE [ MyApp - main() - 63 ] - 5 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-06-27 14:21:43 IST - TRACE [ MyApp - main() - 63 ] - 6 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-06-27 14:21:43 IST - TRACE [ MyApp - main() - 63 ] - 7 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-06-27 14:21:43 IST - TRACE [ MyApp - main() - 63 ] - 8 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-06-27 14:21:43 IST - TRACE [ MyApp - main() - 63 ] - 9 MyApp Entering application.com.bhavik.misc.log4j2.MyApp

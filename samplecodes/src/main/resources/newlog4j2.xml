@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="5" verbose="true" strict="true">
+	<Properties>
+		<Property name="logpatterns">%d{yyyy-MM-dd HH:mm:ss zzz} - %-5p [ %C{1} - %M() - %L ] - %m%n</Property>
+		<Property name="logLocation">log</Property>
+		<property name="rollingFilePattern">.%i</property>
+	</Properties>
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="${logpatterns}" />
+		</Console>
+		<RollingFile name="APPLOGNEW" filename="${logLocation}/newlogs.log"
+			filepattern="${logLocation}/newlogs.log${rollingFilePattern}">
+			<PatternLayout pattern="${logpatterns}" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="10 MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="20" />
+		</RollingFile>
+		<RollingFile name="CONSOLELOG" filename="${logLocation}/consolenew.log"
+			filepattern="${logLocation}/consolenew.log${rollingFilePattern}">
+			<PatternLayout pattern="${logpatterns}" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="10 MB" />
+			</Policies>
+			<DefaultRolloverStrategy max="20" />
+		</RollingFile>
+	</Appenders>
+	<Loggers>
+		<Root level="ALL">
+			<AppenderRef ref="APPLOGNEW"></AppenderRef>
+		</Root>
+		<AsyncLogger name="CONSOLELOG" level="ALL" additivity="true">
+			<AppenderRef ref="CONSOLELOG" />
+		</AsyncLogger>
+		<AsyncLogger name="APPLOGNEW" includeLocation="true" level="ALL"
+			additivity="true">
+			<AppenderRef ref="APPLOG" />
+		</AsyncLogger>
+	</Loggers>
+</Configuration>
