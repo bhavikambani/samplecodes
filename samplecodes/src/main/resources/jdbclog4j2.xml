@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="error">
+	<Appenders>
+		<JDBC name="databaseAppender" tableName="LOGGING.APPLICATION_LOG">
+			<ConnectionFactory class="com.bhavik.misc.log4j2.jdbc.HibernateUtil"
+				method="getDatabaseConnection" />
+			<Column name="EVENT_DATE" isEventTimestamp="true" />
+			<Column name="LEVEL" pattern="%level" />
+			<Column name="LOGGER" pattern="%logger" />
+			<Column name="MESSAGE" pattern="%message" />
+			<Column name="THROWABLE" pattern="%ex{full}" />
+		</JDBC>
+	</Appenders>
+	<Loggers>
+		<Root level="warn">
+			<AppenderRef ref="databaseAppender" />
+		</Root>
+	</Loggers>
+</Configuration>

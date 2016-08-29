@@ -14,7 +14,6 @@ import org.apache.logging.log4j.core.config.ConfigurationFactory;
 import org.apache.logging.log4j.core.config.ConfigurationSource;
 import org.apache.logging.log4j.core.config.xml.XmlConfigurationFactory;
 
-import e24online.log.ResourceManagerLogger;
 
 /**
  * The Class MyApp.
