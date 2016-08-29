@@ -5,7 +5,6 @@ import java.io.InputStream;
 import java.io.PrintStream;
 import java.net.URISyntaxException;
 
-import org.apache.log4j.Category;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.core.LoggerContext;
@@ -13,7 +12,6 @@ import org.apache.logging.log4j.core.config.Configuration;
 import org.apache.logging.log4j.core.config.ConfigurationFactory;
 import org.apache.logging.log4j.core.config.ConfigurationSource;
 import org.apache.logging.log4j.core.config.xml.XmlConfigurationFactory;
-
 
 /**
  * The Class MyApp.
@@ -23,9 +21,7 @@ import org.apache.logging.log4j.core.config.xml.XmlConfigurationFactory;
 public class MyApp {
 
 	/** The Constant logger. */
-	private static Logger appLog ;
-	private static Category c;
-	public static Category appLog1 = Category.getInstance(MyApp.class.getName() + ".APPLOG");
+	private static Logger appLog;
 	
 	/** The Constant consoleLogger. */
 	private static final Logger consoleLog ;
@@ -44,10 +40,11 @@ public class MyApp {
 		} catch (URISyntaxException e) {
 			e.printStackTrace();
 		}
-		appLog = LogManager.getLogger("APPLOGNEW");
-		 consoleLog = LogManager.getLogger("CONSOLELOG");
+		appLog = LogManager.getLogger(MyApp.class.getName() + ".APPLOG");
+		 consoleLog = LogManager.getLogger(MyApp.class.getName() + ".CONSOLELOG");
 		System.out.println("Starting application, now all the logs will be placed in system.log");
-		System.setOut(createLoggingProxy(System.out));
+		//System.setOut(createLoggingProxy(System.out));
+		
 	}
 
 	/**
@@ -60,7 +57,8 @@ public class MyApp {
 
 		System.out.println("MyApp This is console log");
 		// Set up a simple configuration that logs on the console.
-
+		System.out.println("appLog ### " + appLog);
+		System.out.println("consoleLog ### " + consoleLog);
 		appLog.debug(MyApp.class.getName());
 		consoleLog.debug("MyApp Thread started with Logger");
 		for (long i = 0; i < 10L; i++) {

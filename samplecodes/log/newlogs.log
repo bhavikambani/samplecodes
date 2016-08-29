@@ -1,13 +1,178 @@
-2016-06-27 14:21:43 IST - DEBUG [ ? - () -  ] - MyApp This is console log
-2016-06-27 14:21:43 IST - DEBUG [ MyApp - main() - 60 ] - com.bhavik.misc.log4j2.MyApp
-2016-06-27 14:21:43 IST - DEBUG [ ? - () -  ] - MyApp Thread started with Logger
-2016-06-27 14:21:43 IST - TRACE [ MyApp - main() - 63 ] - 0 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
-2016-06-27 14:21:43 IST - TRACE [ MyApp - main() - 63 ] - 1 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
-2016-06-27 14:21:43 IST - TRACE [ MyApp - main() - 63 ] - 2 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
-2016-06-27 14:21:43 IST - TRACE [ MyApp - main() - 63 ] - 3 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
-2016-06-27 14:21:43 IST - TRACE [ MyApp - main() - 63 ] - 4 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
-2016-06-27 14:21:43 IST - TRACE [ MyApp - main() - 63 ] - 5 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
-2016-06-27 14:21:43 IST - TRACE [ MyApp - main() - 63 ] - 6 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
-2016-06-27 14:21:43 IST - TRACE [ MyApp - main() - 63 ] - 7 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
-2016-06-27 14:21:43 IST - TRACE [ MyApp - main() - 63 ] - 8 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
-2016-06-27 14:21:43 IST - TRACE [ MyApp - main() - 63 ] - 9 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-04 19:12:59 IST - DEBUG [ ? - () -  ] - MyApp This is console log
+2016-07-04 19:12:59 IST - DEBUG [ MyApp - main() - 64 ] - com.bhavik.misc.log4j2.MyApp
+2016-07-04 19:12:59 IST - DEBUG [ MyApp - main() - 64 ] - com.bhavik.misc.log4j2.MyApp
+2016-07-04 19:12:59 IST - DEBUG [ ? - () -  ] - MyApp Thread started with Logger
+2016-07-04 19:12:59 IST - TRACE [ MyApp - main() - 67 ] - 0 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-04 19:12:59 IST - TRACE [ MyApp - main() - 67 ] - 1 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-04 19:12:59 IST - TRACE [ MyApp - main() - 67 ] - 2 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-04 19:12:59 IST - TRACE [ MyApp - main() - 67 ] - 3 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-04 19:12:59 IST - TRACE [ MyApp - main() - 67 ] - 4 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-04 19:12:59 IST - TRACE [ MyApp - main() - 67 ] - 5 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-04 19:12:59 IST - TRACE [ MyApp - main() - 67 ] - 6 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-04 19:12:59 IST - TRACE [ MyApp - main() - 67 ] - 0 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-04 19:12:59 IST - TRACE [ MyApp - main() - 67 ] - 1 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-04 19:12:59 IST - TRACE [ MyApp - main() - 67 ] - 2 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-04 19:12:59 IST - TRACE [ MyApp - main() - 67 ] - 3 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-04 19:12:59 IST - TRACE [ MyApp - main() - 67 ] - 4 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-04 19:12:59 IST - TRACE [ MyApp - main() - 67 ] - 5 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-04 19:12:59 IST - TRACE [ MyApp - main() - 67 ] - 6 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-04 19:12:59 IST - TRACE [ MyApp - main() - 67 ] - 7 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-04 19:12:59 IST - TRACE [ MyApp - main() - 67 ] - 8 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-04 19:12:59 IST - TRACE [ MyApp - main() - 67 ] - 9 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-04 19:12:59 IST - DEBUG [ ? - () -  ] - MyApp Thread ended with Logger
+2016-07-04 19:12:59 IST - TRACE [ MyApp - main() - 67 ] - 7 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-04 19:12:59 IST - TRACE [ MyApp - main() - 67 ] - 8 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-04 19:12:59 IST - TRACE [ MyApp - main() - 67 ] - 9 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-04 19:12:59 IST - TRACE [ Bar - doIt() - 127 ] - entry
+2016-07-04 19:12:59 IST - TRACE [ Bar - doIt() - 127 ] - entry
+2016-07-04 19:12:59 IST - ERROR [ Bar - doIt() - 128 ] - Did it again!
+2016-07-04 19:12:59 IST - TRACE [ Bar - doIt() - 129 ] - exit with(false)
+2016-07-04 19:12:59 IST - INFO  [ MyApp - main() - 73 ] - MyApp Didn't do it.
+2016-07-04 19:12:59 IST - TRACE [ MyApp - main() - 75 ] - MyApp Exiting application.
+2016-07-04 19:12:59 IST - ERROR [ Bar - doIt() - 128 ] - Did it again!
+2016-07-04 19:12:59 IST - TRACE [ Bar - doIt() - 129 ] - exit with(false)
+2016-07-04 19:12:59 IST - INFO  [ MyApp - main() - 73 ] - MyApp Didn't do it.
+2016-07-04 19:12:59 IST - TRACE [ MyApp - main() - 75 ] - MyApp Exiting application.
+2016-07-05 11:45:27 IST - DEBUG [ ? - () -  ] - MyApp This is console log
+2016-07-05 11:45:27 IST - DEBUG [ MyApp - main() - 63 ] - com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:45:27 IST - DEBUG [ MyApp - main() - 63 ] - com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:45:27 IST - DEBUG [ ? - () -  ] - MyApp Thread started with Logger
+2016-07-05 11:45:27 IST - TRACE [ MyApp - main() - 66 ] - 0 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:45:27 IST - TRACE [ MyApp - main() - 66 ] - 0 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:45:27 IST - TRACE [ MyApp - main() - 66 ] - 1 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:45:27 IST - TRACE [ MyApp - main() - 66 ] - 1 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:45:27 IST - TRACE [ MyApp - main() - 66 ] - 2 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:45:27 IST - TRACE [ MyApp - main() - 66 ] - 2 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:45:27 IST - TRACE [ MyApp - main() - 66 ] - 3 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:45:27 IST - TRACE [ MyApp - main() - 66 ] - 3 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:45:27 IST - TRACE [ MyApp - main() - 66 ] - 4 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:45:27 IST - TRACE [ MyApp - main() - 66 ] - 4 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:45:27 IST - TRACE [ MyApp - main() - 66 ] - 5 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:45:27 IST - TRACE [ MyApp - main() - 66 ] - 5 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:45:27 IST - TRACE [ MyApp - main() - 66 ] - 6 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:45:27 IST - TRACE [ MyApp - main() - 66 ] - 6 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:45:27 IST - TRACE [ MyApp - main() - 66 ] - 7 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:45:27 IST - TRACE [ MyApp - main() - 66 ] - 7 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:45:27 IST - TRACE [ MyApp - main() - 66 ] - 8 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:45:27 IST - TRACE [ MyApp - main() - 66 ] - 8 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:45:27 IST - TRACE [ MyApp - main() - 66 ] - 9 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:45:27 IST - TRACE [ MyApp - main() - 66 ] - 9 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:45:27 IST - DEBUG [ ? - () -  ] - MyApp Thread ended with Logger
+2016-07-05 11:45:27 IST - TRACE [ Bar - doIt() - 126 ] - entry
+2016-07-05 11:45:27 IST - TRACE [ Bar - doIt() - 126 ] - entry
+2016-07-05 11:45:27 IST - ERROR [ Bar - doIt() - 127 ] - Did it again!
+2016-07-05 11:45:27 IST - ERROR [ Bar - doIt() - 127 ] - Did it again!
+2016-07-05 11:45:27 IST - TRACE [ Bar - doIt() - 128 ] - exit with(false)
+2016-07-05 11:45:27 IST - TRACE [ Bar - doIt() - 128 ] - exit with(false)
+2016-07-05 11:45:27 IST - INFO  [ MyApp - main() - 72 ] - MyApp Didn't do it.
+2016-07-05 11:45:27 IST - INFO  [ MyApp - main() - 72 ] - MyApp Didn't do it.
+2016-07-05 11:45:27 IST - TRACE [ MyApp - main() - 74 ] - MyApp Exiting application.
+2016-07-05 11:45:27 IST - TRACE [ MyApp - main() - 74 ] - MyApp Exiting application.
+2016-07-05 11:56:54 IST - DEBUG [ ? - () -  ] - MyApp This is console log
+2016-07-05 11:56:54 IST - DEBUG [ ? - () -  ] - appLog ### com.bhavik.misc.log4j2.MyApp.APPLOG:ALL in AsyncLoggerContext@453076530
+2016-07-05 11:56:54 IST - DEBUG [ ? - () -  ] - consoleLog ### com.bhavik.misc.log4j2.MyApp.CONSOLELOG:ALL in AsyncLoggerContext@453076530
+2016-07-05 11:56:54 IST - DEBUG [ MyApp - main() - 62 ] - com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:56:54 IST - DEBUG [ MyApp - main() - 62 ] - com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:56:54 IST - DEBUG [ ? - () -  ] - MyApp Thread started with Logger
+2016-07-05 11:56:54 IST - TRACE [ MyApp - main() - 65 ] - 0 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:56:54 IST - TRACE [ MyApp - main() - 65 ] - 0 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:56:54 IST - TRACE [ MyApp - main() - 65 ] - 1 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:56:54 IST - TRACE [ MyApp - main() - 65 ] - 1 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:56:54 IST - TRACE [ MyApp - main() - 65 ] - 2 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:56:54 IST - TRACE [ MyApp - main() - 65 ] - 2 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:56:54 IST - TRACE [ MyApp - main() - 65 ] - 3 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:56:54 IST - TRACE [ MyApp - main() - 65 ] - 3 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:56:54 IST - TRACE [ MyApp - main() - 65 ] - 4 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:56:54 IST - TRACE [ MyApp - main() - 65 ] - 4 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:56:54 IST - TRACE [ MyApp - main() - 65 ] - 5 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:56:54 IST - TRACE [ MyApp - main() - 65 ] - 5 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:56:54 IST - TRACE [ MyApp - main() - 65 ] - 6 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:56:54 IST - TRACE [ MyApp - main() - 65 ] - 6 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:56:54 IST - TRACE [ MyApp - main() - 65 ] - 7 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:56:54 IST - TRACE [ MyApp - main() - 65 ] - 7 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:56:54 IST - TRACE [ MyApp - main() - 65 ] - 8 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:56:54 IST - TRACE [ MyApp - main() - 65 ] - 8 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:56:54 IST - TRACE [ MyApp - main() - 65 ] - 9 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:56:54 IST - TRACE [ MyApp - main() - 65 ] - 9 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:56:54 IST - DEBUG [ ? - () -  ] - MyApp Thread ended with Logger
+2016-07-05 11:56:54 IST - TRACE [ Bar - doIt() - 125 ] - entry
+2016-07-05 11:56:54 IST - TRACE [ Bar - doIt() - 125 ] - entry
+2016-07-05 11:56:54 IST - ERROR [ Bar - doIt() - 126 ] - Did it again!
+2016-07-05 11:56:54 IST - ERROR [ Bar - doIt() - 126 ] - Did it again!
+2016-07-05 11:56:54 IST - TRACE [ Bar - doIt() - 127 ] - exit with(false)
+2016-07-05 11:56:54 IST - INFO  [ MyApp - main() - 71 ] - MyApp Didn't do it.
+2016-07-05 11:56:54 IST - TRACE [ MyApp - main() - 73 ] - MyApp Exiting application.
+2016-07-05 11:56:54 IST - TRACE [ Bar - doIt() - 127 ] - exit with(false)
+2016-07-05 11:56:54 IST - INFO  [ MyApp - main() - 71 ] - MyApp Didn't do it.
+2016-07-05 11:56:54 IST - TRACE [ MyApp - main() - 73 ] - MyApp Exiting application.
+2016-07-05 11:57:05 IST - DEBUG [ ? - () -  ] - MyApp This is console log
+2016-07-05 11:57:05 IST - DEBUG [ ? - () -  ] - appLog ### com.bhavik.misc.log4j2.MyApp.APPLOG:ALL in AsyncLoggerContext@453076530
+2016-07-05 11:57:05 IST - DEBUG [ ? - () -  ] - consoleLog ### com.bhavik.misc.log4j2.MyApp.CONSOLELOG:ALL in AsyncLoggerContext@453076530
+2016-07-05 11:57:05 IST - DEBUG [ MyApp - main() - 62 ] - com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:57:05 IST - DEBUG [ MyApp - main() - 62 ] - com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:57:05 IST - DEBUG [ ? - () -  ] - MyApp Thread started with Logger
+2016-07-05 11:57:05 IST - TRACE [ MyApp - main() - 65 ] - 0 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:57:05 IST - TRACE [ MyApp - main() - 65 ] - 1 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:57:05 IST - TRACE [ MyApp - main() - 65 ] - 2 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:57:05 IST - TRACE [ MyApp - main() - 65 ] - 3 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:57:05 IST - TRACE [ MyApp - main() - 65 ] - 0 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:57:05 IST - TRACE [ MyApp - main() - 65 ] - 4 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:57:05 IST - TRACE [ MyApp - main() - 65 ] - 5 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:57:05 IST - TRACE [ MyApp - main() - 65 ] - 6 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:57:05 IST - TRACE [ MyApp - main() - 65 ] - 7 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:57:05 IST - TRACE [ MyApp - main() - 65 ] - 1 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:57:05 IST - TRACE [ MyApp - main() - 65 ] - 2 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:57:05 IST - TRACE [ MyApp - main() - 65 ] - 3 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:57:05 IST - TRACE [ MyApp - main() - 65 ] - 4 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:57:05 IST - TRACE [ MyApp - main() - 65 ] - 5 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:57:05 IST - TRACE [ MyApp - main() - 65 ] - 6 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:57:05 IST - TRACE [ MyApp - main() - 65 ] - 7 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:57:05 IST - TRACE [ MyApp - main() - 65 ] - 8 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:57:05 IST - TRACE [ MyApp - main() - 65 ] - 9 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:57:05 IST - DEBUG [ ? - () -  ] - MyApp Thread ended with Logger
+2016-07-05 11:57:05 IST - TRACE [ MyApp - main() - 65 ] - 8 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:57:05 IST - TRACE [ MyApp - main() - 65 ] - 9 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:57:05 IST - TRACE [ Bar - doIt() - 125 ] - entry
+2016-07-05 11:57:05 IST - TRACE [ Bar - doIt() - 125 ] - entry
+2016-07-05 11:57:05 IST - ERROR [ Bar - doIt() - 126 ] - Did it again!
+2016-07-05 11:57:05 IST - ERROR [ Bar - doIt() - 126 ] - Did it again!
+2016-07-05 11:57:05 IST - TRACE [ Bar - doIt() - 127 ] - exit with(false)
+2016-07-05 11:57:05 IST - TRACE [ Bar - doIt() - 127 ] - exit with(false)
+2016-07-05 11:57:05 IST - INFO  [ MyApp - main() - 71 ] - MyApp Didn't do it.
+2016-07-05 11:57:05 IST - INFO  [ MyApp - main() - 71 ] - MyApp Didn't do it.
+2016-07-05 11:57:05 IST - TRACE [ MyApp - main() - 73 ] - MyApp Exiting application.
+2016-07-05 11:57:05 IST - TRACE [ MyApp - main() - 73 ] - MyApp Exiting application.
+2016-07-05 11:58:09 IST - DEBUG [ MyApp - main() - 62 ] - com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:58:09 IST - DEBUG [ MyApp - main() - 62 ] - com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:58:09 IST - DEBUG [ ? - () -  ] - MyApp Thread started with Logger
+2016-07-05 11:58:09 IST - TRACE [ MyApp - main() - 65 ] - 0 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:58:09 IST - TRACE [ MyApp - main() - 65 ] - 0 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:58:09 IST - TRACE [ MyApp - main() - 65 ] - 1 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:58:09 IST - TRACE [ MyApp - main() - 65 ] - 1 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:58:09 IST - TRACE [ MyApp - main() - 65 ] - 2 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:58:09 IST - TRACE [ MyApp - main() - 65 ] - 2 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:58:09 IST - TRACE [ MyApp - main() - 65 ] - 3 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:58:09 IST - TRACE [ MyApp - main() - 65 ] - 3 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:58:09 IST - TRACE [ MyApp - main() - 65 ] - 4 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:58:09 IST - TRACE [ MyApp - main() - 65 ] - 4 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:58:09 IST - TRACE [ MyApp - main() - 65 ] - 5 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:58:09 IST - TRACE [ MyApp - main() - 65 ] - 5 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:58:09 IST - TRACE [ MyApp - main() - 65 ] - 6 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:58:09 IST - TRACE [ MyApp - main() - 65 ] - 6 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:58:09 IST - TRACE [ MyApp - main() - 65 ] - 7 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:58:09 IST - TRACE [ MyApp - main() - 65 ] - 7 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:58:09 IST - TRACE [ MyApp - main() - 65 ] - 8 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:58:09 IST - TRACE [ MyApp - main() - 65 ] - 8 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:58:09 IST - TRACE [ MyApp - main() - 65 ] - 9 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:58:09 IST - TRACE [ MyApp - main() - 65 ] - 9 MyApp Entering application.com.bhavik.misc.log4j2.MyApp
+2016-07-05 11:58:09 IST - DEBUG [ ? - () -  ] - MyApp Thread ended with Logger
+2016-07-05 11:58:09 IST - TRACE [ Bar - doIt() - 125 ] - entry
+2016-07-05 11:58:09 IST - TRACE [ Bar - doIt() - 125 ] - entry
+2016-07-05 11:58:09 IST - ERROR [ Bar - doIt() - 126 ] - Did it again!
+2016-07-05 11:58:09 IST - ERROR [ Bar - doIt() - 126 ] - Did it again!
+2016-07-05 11:58:09 IST - TRACE [ Bar - doIt() - 127 ] - exit with(false)
+2016-07-05 11:58:09 IST - TRACE [ Bar - doIt() - 127 ] - exit with(false)
+2016-07-05 11:58:09 IST - INFO  [ MyApp - main() - 71 ] - MyApp Didn't do it.
+2016-07-05 11:58:09 IST - INFO  [ MyApp - main() - 71 ] - MyApp Didn't do it.
+2016-07-05 11:58:09 IST - TRACE [ MyApp - main() - 73 ] - MyApp Exiting application.
+2016-07-05 11:58:09 IST - TRACE [ MyApp - main() - 73 ] - MyApp Exiting application.

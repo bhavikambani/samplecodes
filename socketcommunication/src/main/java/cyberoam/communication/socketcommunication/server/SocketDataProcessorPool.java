@@ -11,7 +11,7 @@ public class SocketDataProcessorPool {
 	private static final String MODULE ="[SocketDataProcessorPool]: ";
 	private BlockingQueue<Runnable> worksQueue = null;
 	private ThreadPoolExecutor executor = null;
-	private static SocketDataProcessorPool socketCommThreadPoolExecutor = null;
+	private static SocketDataProcessorPool instance = null;
 	
 	private static int workQueueSize;
 	private static int coreThreadPoolSize;
@@ -73,16 +73,16 @@ public class SocketDataProcessorPool {
 		executor.execute(runnableThread);
 	}
 	
-	public static SocketCommThreadPoolExecutor getSocketCommThreadPoolExecutor() {
-			if(socketCommThreadPoolExecutor == null){
-				synchronized (SocketCommThreadPoolExecutor.class) {
-					if(socketCommThreadPoolExecutor == null){
+	public static SocketDataProcessorPool getSocketDataProcessorPool() {
+			if(instance == null){
+				synchronized (SocketDataProcessorPool.class) {
+					if(instance == null){
 						System.out.println(MODULE + "In getSocketCommThreadPoolExecutor() to create Singlton SocketCommThreadPoolExecutor.");
-						socketCommThreadPoolExecutor = new SocketCommThreadPoolExecutor();
+						instance = new SocketDataProcessorPool();
 					}
 				}
 			}
-			return socketCommThreadPoolExecutor;
+			return instance;
 	}
 	
 	public static void main(String arg[]){

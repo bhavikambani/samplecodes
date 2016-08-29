@@ -1,4 +1,0 @@
-2016-06-27 14:21:43 IST - DEBUG [ ? - () -  ] - MyApp1 Starting application, now all the logs will be placed in system.log
-2016-06-27 14:21:43 IST - DEBUG [ MyApp2 - printLogs() - 108 ] - MyApp1 This is new myapp1 applog
-2016-06-27 14:21:43 IST - DEBUG [ MyApp2 - printLogs() - 108 ] - MyApp1 This is new myapp1 applog
-2016-06-27 14:21:43 IST - DEBUG [ ? - () -  ] - MyApp1 This is new myapp1 consolelog

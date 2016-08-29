@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="WARN" monitorInterval="5" verbose="true" strict="true">
+<Configuration status="ALL" monitorInterval="5" verbose="true" strict="true">
 	<Properties>
 		<Property name="logpatterns">%d{yyyy-MM-dd HH:mm:ss zzz} - %-5p [ %C{1} - %M() - %L ] - %m%n</Property>
 		<Property name="logLocation">log</Property>
@@ -9,7 +9,7 @@
 		<Console name="Console" target="SYSTEM_OUT">
 			<PatternLayout pattern="${logpatterns}" />
 		</Console>
-		<RollingFile name="APPLOGNEW" filename="${logLocation}/newlogs.log"
+		<RollingFile name="com.bhavik.misc.log4j2.MyApp.APPLOG" filename="${logLocation}/newlogs.log"
 			filepattern="${logLocation}/newlogs.log${rollingFilePattern}">
 			<PatternLayout pattern="${logpatterns}" />
 			<Policies>
@@ -17,7 +17,7 @@
 			</Policies>
 			<DefaultRolloverStrategy max="20" />
 		</RollingFile>
-		<RollingFile name="CONSOLELOG" filename="${logLocation}/consolenew.log"
+		<RollingFile name="com.bhavik.misc.log4j2.MyApp.CONSOLELOG" filename="${logLocation}/consolenew.log"
 			filepattern="${logLocation}/consolenew.log${rollingFilePattern}">
 			<PatternLayout pattern="${logpatterns}" />
 			<Policies>
@@ -28,14 +28,14 @@
 	</Appenders>
 	<Loggers>
 		<Root level="ALL">
-			<AppenderRef ref="APPLOGNEW"></AppenderRef>
+			<AppenderRef ref="com.bhavik.misc.log4j2.MyApp.APPLOG"></AppenderRef>
 		</Root>
-		<AsyncLogger name="CONSOLELOG" level="ALL" additivity="true">
-			<AppenderRef ref="CONSOLELOG" />
+		<AsyncLogger name="com.bhavik.misc.log4j2.MyApp.CONSOLELOG" level="ALL" additivity="true">
+			<AppenderRef ref="com.bhavik.misc.log4j2.MyApp.CONSOLELOG" />
 		</AsyncLogger>
-		<AsyncLogger name="APPLOGNEW" includeLocation="true" level="ALL"
+		<AsyncLogger name="com.bhavik.misc.log4j2.MyApp.APPLOG" includeLocation="true" level="ALL"
 			additivity="true">
-			<AppenderRef ref="APPLOG" />
+			<AppenderRef ref="com.bhavik.misc.log4j2.MyApp.APPLOG" />
 		</AsyncLogger>
 	</Loggers>
 </Configuration>
