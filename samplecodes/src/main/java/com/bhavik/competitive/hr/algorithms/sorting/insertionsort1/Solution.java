@@ -5,42 +5,66 @@ import java.util.Scanner;
 /**
  * The Class Solution.
  * 
- * 5
- * 2 4 6 8 3
- * 
- * @see https://www.hackerrank.com/challenges/insertionsort1
+ * Problem Statement #
+ * <url>https://www.hackerrank.com/challenges/insertionsort1</url>
  * 
  * @author Bhavik Aniruddh Ambani
  */
 public class Solution {
 
 	/**
-	 * The main method.
+	 * Insert into sorted.
 	 *
-	 * @param args
-	 *            the arguments
+	 * @pvalueArrayam valueArray the valueArray of integer values
 	 */
-	public static void main(String[] args) {
-
-		Scanner in = new Scanner(System.in);
-		int totalNumbers = in.nextInt();
-		int[] numbers = new int[totalNumbers];
-
-		for (int i = 0; i < totalNumbers; i++) {
-			numbers[i] = in.nextInt();
-		}
-		System.out.println("Min number # " + getUnorderedNumber(numbers));
-	}
-
-	public static int getUnorderedNumber(int[] values) {
-		int unorderedNumber = values[0];
-		for (int i = 0; i < values.length - 1; i++) {
-			if (values[i] > values[i + 1]) {
-				unorderedNumber = values[i + 1];
-				values[i + 1] = values[i];
+	public static void insertIntoSorted(int[] valueArray) {
+		int temp = valueArray[valueArray.length - 1];
+		boolean placed = false;
+		for (int j = valueArray.length - 2; j >= 0; j--) {
+			if (valueArray[j] > temp) {
+				valueArray[j + 1] = valueArray[j];
+				printvalueArrayray(valueArray);
+			} else {
+				valueArray[j + 1] = temp;
+				printvalueArrayray(valueArray);
+				placed = true;
 				break;
 			}
 		}
-		return unorderedNumber;
+		if (!placed) {
+			valueArray[0] = temp;
+			printvalueArrayray(valueArray);
+		}
 	}
+
+	/**
+	 * The main method.
+	 *
+	 * @pvalueArrayam valueArraygs the valueArrayguments
+	 */
+	/* Tail stvalueArrayts here */
+	public static void main(String[] valueArraygs) {
+		Scanner in = new Scanner(System.in);
+		int s = in.nextInt();
+		int[] valueArray = new int[s];
+		for (int i = 0; i < s; i++) {
+			valueArray[i] = in.nextInt();
+		}
+		insertIntoSorted(valueArray);
+		in.close();
+	}
+
+	/**
+	 * Prints the valueArrayray.
+	 *
+	 * @pvalueArrayam valueArray the valueArray
+	 */
+	private static void printvalueArrayray(int[] valueArray) {
+		StringBuilder sb = new StringBuilder("");
+		for (int n : valueArray) {
+			sb.append(n + " ");
+		}
+		System.out.println(sb.toString().trim());
+	}
+
 }
