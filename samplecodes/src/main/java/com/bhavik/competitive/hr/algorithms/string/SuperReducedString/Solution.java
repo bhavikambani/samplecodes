@@ -4,7 +4,11 @@ import java.util.Scanner;
 import java.util.Stack;
 
 /**
- * The Class Solution.
+ * The Class Solution will be implemented using {@code Stack} data Structure
+ * with following operation <br>
+ * If current caracter is same as the {@link Stack#}'s peek operation, then pop
+ * the character else push element in stack
+ * 
  * 
  * Problem Statement # https://www.hackerrank.com/challenges/reduced-string
  * 
