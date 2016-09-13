@@ -9,7 +9,8 @@ import java.util.TreeSet;
 public class Solution {
 
 	public static void main(String args[]) throws FileNotFoundException {
-		Scanner scanner = new Scanner(new File("/home/bhavik/Downloads/Important/Input.txt")).useDelimiter("\n");
+		String inputFile ="/home/bhavik/Downloads/Important/Input.txt";
+		Scanner scanner = new Scanner(new File(inputFile)).useDelimiter("\n");
 		long totalTestCases = scanner.nextInt();
 		MyStack longStack = new MyStack();
 		for (long i = 0; i < totalTestCases && scanner.hasNext(); i++) {
