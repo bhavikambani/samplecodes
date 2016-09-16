@@ -1,10 +1,12 @@
 package com.bhavik.misc.hashing.cuckoohashmap;
 
 import java.util.AbstractMap;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Random;
 import java.util.Set;
+import java.util.TreeMap;
 
 /**
  * The Class CuckooHashMap.
@@ -34,19 +36,45 @@ public class CuckooHashMap<K, V> extends AbstractMap<K, V> implements Map<K, V> 
 	 *            the arguments
 	 */
 	public static void main(String[] args) {
-		Map<Integer, String> map = new CuckooHashMap<Integer, String>();
-		int itemCount = 25;
+		Map<Integer, String> cuckooMap = new CuckooHashMap<Integer, String>();
+		Map<Integer, String> treeMap = new TreeMap<Integer, String>(); 
+		Map<Integer, String> hashMap = new HashMap<Integer, String>(); 
+		int itemCount = 5;
+		System.out.println("Operation Starts " + System.currentTimeMillis());
+		long currentTimeMillis = System.currentTimeMillis();
 		for (int i = 0; i < itemCount; i++) {
 			Integer key = i;
 			String val = "Value_" + i;
-			map.put(key, val);
+			hashMap.put(key, val);
 		}
-
-		System.out.println(map.get(1));
-
-		for (String v : map.values()) {
-			System.out.println(v);
+		System.out.println(hashMap.get(1));
+		for (String v : hashMap.values()) {
+		//	System.out.println(v);
 		}
+		System.out.println("HashMap Starts " + ( System.currentTimeMillis() - currentTimeMillis ));
+		currentTimeMillis = System.currentTimeMillis();
+		for (int i = 0; i < itemCount; i++) {
+			Integer key = i;
+			String val = "Value_" + i;
+			cuckooMap.put(key, val);
+		}
+		System.out.println(cuckooMap.get(1));
+		for (String v : cuckooMap.values()) {
+		//	System.out.println(v);
+		}
+		System.out.println("Cockoo HashMap Starts " + ( System.currentTimeMillis() - currentTimeMillis ));
+		currentTimeMillis = System.currentTimeMillis();
+		for (int i = 0; i < itemCount; i++) {
+			Integer key = i;
+			String val = "Value_" + i;
+			treeMap.put(key, val);
+		}
+		System.out.println(treeMap.get(1));
+		for (String v : treeMap.values()) {
+		//	System.out.println(v);
+		}
+		System.out.println("TreeMap Starts " + ( System.currentTimeMillis() - currentTimeMillis ));
+		System.out.println("Operation Ends " + System.currentTimeMillis());
 	}
 
 	/**
