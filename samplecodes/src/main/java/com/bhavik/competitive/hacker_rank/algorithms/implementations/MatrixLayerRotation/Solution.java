@@ -1,110 +1,71 @@
 package com.bhavik.competitive.hacker_rank.algorithms.implementations.MatrixLayerRotation;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
+ * The Class Solution implementation of Matrix Layer Rotation problem of hacker
+ * rank.
+ * 
+ * Ref# https://www.hackerrank.com/challenges/matrix-rotation-algo
+ * 
  * @author Bhavik Aniruddh Ambani
- *
  */
-
 public class Solution {
+
+	/**
+	 * The main method.
+	 *
+	 * @param args
+	 *            the arguments
+	 */
 	public static void main(String[] args) {
-		Scanner buf = new Scanner(System.in);
-
-		String[] line = new String[3];
-		line = buf.nextLine().split(" ");
-		int m = Integer.parseInt(line[0]);
-		int n = Integer.parseInt(line[1]);
-		int num_rotations = Integer.parseInt(line[2]);
-
-		int[][] matrix = new int[m][n];
-
+		Scanner in = new Scanner(System.in);
+		int m = in.nextInt();
+		int n = in.nextInt();
+		int r = in.nextInt();
+		int[][] a = new int[m][n];
 		for (int i = 0; i < m; ++i) {
-			line = new String[n];
-			line = buf.nextLine().split(" ");
-			for (int j = 0; j < n; ++j) {
-				matrix[i][j] = Integer.parseInt(line[j]);
+			for (int j = 0; j < n; j++) {
+				a[i][j] = in.nextInt();
 			}
 		}
-		buf.close();
-		int[][] orgMatrix = deepCopyIntMatrix(matrix);
-		int rotateCount = 0;
-		do {
-			rotatematrix(matrix);
-			rotateCount++;
-		} while (!Arrays.deepEquals(matrix, orgMatrix));
-		System.out.println(rotateCount);
-		printMatrix(matrix);
-		printMatrix(orgMatrix);
-	}
+		in.close();
 
-	public static int[][] deepCopyIntMatrix(int[][] input) {
-		if (input == null)
-			return null;
-		int[][] result = new int[input.length][];
-		for (int r = 0; r < input.length; r++) {
-			result[r] = input[r].clone();
-		}
-		return result;
-	}
-
-	static int[][] rotatematrix(int mat[][]) {
-		int m = mat.length;
-		int n = mat[0].length;
-		int row = 0, col = 0;
-		int prev, curr;
-		/*
-		 * row - Staring row index m - ending row index col - starting column
-		 * index n - ending column index i - iterator
-		 */
-		while (row < m && col < n) {
-			if (row + 1 == m || col + 1 == n)
-				break;
-			// Store the first element of next row, this
-			// element will replace first element of current
-			// row
-			prev = mat[row + 1][col];
-			/* Move elements of first row from the remaining rows */
-			for (int i = col; i < n; i++) {
-				curr = mat[row][i];
-				mat[row][i] = prev;
-				prev = curr;
-			}
-			row++;
-			/* Move elements of last column from the remaining columns */
-			for (int i = row; i < m; i++) {
-				curr = mat[i][n - 1];
-				mat[i][n - 1] = prev;
-				prev = curr;
-			}
-			n--;
-			/* Move elements of last row from the remaining rows */
-			if (row < m) {
-				for (int i = n - 1; i >= col; i--) {
-					curr = mat[m - 1][i];
-					mat[m - 1][i] = prev;
-					prev = curr;
+		int totalLayers = Math.min(m, n) / 2;
+		for (int layer = 0; layer < totalLayers; ++layer) {
+			for (int x = 0; x < r % (2 * (m + n - 2 - 4 * layer)); x++) {
+				int i = layer, j = layer;
+				int temp = a[layer][layer];
+				while (i < m - 1 - layer) {
+					int temp2 = a[i + 1][j];
+					a[i + 1][j] = temp;
+					temp = temp2;
+					i++;
+				}
+				while (j < n - 1 - layer) {
+					int temp2 = a[i][j + 1];
+					a[i][j + 1] = temp;
+					temp = temp2;
+					j++;
+				}
+				while (i > layer) {
+					int temp2 = a[i - 1][j];
+					a[i - 1][j] = temp;
+					temp = temp2;
+					i--;
+				}
+				while (j > layer) {
+					int temp2 = a[i][j - 1];
+					a[i][j - 1] = temp;
+					temp = temp2;
+					j--;
 				}
 			}
-			m--;
-			/* Move elements of first column from the remaining rows */
-			if (col < n) {
-				for (int i = m - 1; i >= row; i--) {
-					curr = mat[i][col];
-					mat[i][col] = prev;
-					prev = curr;
-				}
-			}
-			col++;
 		}
-		return mat;
-	}
 
-	private static void printMatrix(int[][] matrix) {
-		for (int row = 0; row < matrix.length; row++) {
-			for (int col = 0; col < matrix[row].length; col++) {
-				System.out.printf("%3d", matrix[row][col]);
+		for (int x = 0; x < a.length; x++) {
+			for (int y = 0; y < a[x].length; y++) {
+				System.out.print(a[x][y] + " ");
 			}
 			System.out.println();
 		}
