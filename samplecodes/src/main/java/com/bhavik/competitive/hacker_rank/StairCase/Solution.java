@@ -1,26 +1,37 @@
-package com.bhavik.competitive.hacker_rank.StairCase;
+package com.bhavik.competitive.hacker_rank.staircase;
 
 import java.util.Scanner;
 
+/**
+ * The Class Solution.
+ * 
+ * @author Bhavik Aniruddh Ambani
+ */
 public class Solution {
 
+	/**
+	 * The main method.
+	 *
+	 * @param args
+	 *            the arguments
+	 */
 	public static void main(String[] args) {
-		Scanner scn = new Scanner(System.in);
-		int n = scn.nextInt();
-		StairCase(n);
+		Scanner in = new Scanner(System.in);
+		int n = in.nextInt();
+		in.close();
+		int temp = 1;
+		for (int i = n; i > 0; i--) {
 
-	}
+			for (int j = i - 1; j > 0; j--) {
+				System.out.print(" ");
+			}
 
-	static void StairCase(int n) {
-		for (int i = 1; i <= n; i++) {
-			for (int j = 1; j <= n; j++) {
-				if ((i + j) > n) {
-					System.out.print("#");
-				} else {
-					System.out.print(" ");
-				}
+			for (int k = 1; k <= temp; k++) {
+				System.out.print("#");
 			}
 			System.out.println();
+			temp++;
 		}
+
 	}
 }
