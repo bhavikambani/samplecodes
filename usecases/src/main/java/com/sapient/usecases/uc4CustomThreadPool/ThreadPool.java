@@ -10,10 +10,12 @@ public class ThreadPool {
 
 	boolean shutdownInitiated = false;
 	private BlockingQueue taskQueue = null;
+	@SuppressWarnings("unused")
 	private final int poolSize;
 
 	private final List<Worker> workers;
 
+	@SuppressWarnings("unchecked")
 	public ThreadPool(final int poolSize, final int tasksSize) {
 		this.poolSize = poolSize;
 		taskQueue = new LinkedBlockingQueue(tasksSize);

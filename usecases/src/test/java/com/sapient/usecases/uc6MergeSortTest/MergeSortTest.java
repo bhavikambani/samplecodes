@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
 import com.sapient.usecases.uc6MergeSort.MergeSortImpl;

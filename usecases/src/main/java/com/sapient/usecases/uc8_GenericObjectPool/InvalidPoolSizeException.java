@@ -8,6 +8,9 @@ package com.sapient.usecases.uc8_GenericObjectPool;
  */
 public class InvalidPoolSizeException extends Exception {
 
+	/** The Constant serialVersionUID. */
+	private static final long serialVersionUID = 1032304803754001288L;
+
 	/**
 	 * Instantiates a new invalid pool size exception.
 	 *
