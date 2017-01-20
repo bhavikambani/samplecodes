@@ -1,4 +1,4 @@
-package com.bhavik.competitive.hacker_rank.staircase;
+package com.bhavik.competitive.hacker_rank.StairCase;
 
 import java.util.Scanner;
 

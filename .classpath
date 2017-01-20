@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="samplecodes/src/main/java"/>
+	<classpathentry kind="src" path="samplecodes/src/test/java"/>
+	<classpathentry kind="src" path="socketcommunication/src/main/java"/>
+	<classpathentry kind="src" path="socketcommunication/src/test/java"/>
+	<classpathentry kind="src" path="usecases/src/main/java"/>
+	<classpathentry kind="src" path="usecases/src/test/java"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

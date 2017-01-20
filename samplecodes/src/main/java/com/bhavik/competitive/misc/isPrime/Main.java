@@ -20,19 +20,11 @@ public class Main {
 		System.out.println(Main.isPrime(10));
 		String s = new String();
 		char[] charArray = s.toCharArray();
-		for (int i = 0 ; i < charArray.length ; i++){
-			switch (charArray[i]) {
-			case value:
-				
-				break;
-
-			default:
-				break;
-			}
+		for (int i = 0; i < charArray.length; i++) {
 		}
-		
+
 		Stack<Character> charStack = new Stack<>();
 		char pop = charStack.pop();
-		
+
 	}
 }

@@ -1,4 +1,4 @@
-package com.sapient.study.hr.algorithms.runningTimeOfAlgorithm;
+package com.bhavik.competitive.hacker_rank.algorithms.sorting.runningTimeOfAlgorithm;
 
 import java.util.Scanner;
 
