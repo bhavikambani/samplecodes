@@ -16,6 +16,7 @@ public class Solution {
 	 *            the s
 	 * @return the int
 	 */
+
 	public int calculate(String s) {
 		Stack<Integer> factors = new Stack<Integer>();
 		factors.push(1);
