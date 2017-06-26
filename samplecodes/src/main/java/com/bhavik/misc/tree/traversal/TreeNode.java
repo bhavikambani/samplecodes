@@ -1,6 +1,6 @@
 package com.bhavik.misc.tree.traversal;
 
-public class TreeNode< {
+public class TreeNode<T> {
 
 	private int data;
 	private TreeNode leftChild;
