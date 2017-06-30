@@ -24,6 +24,7 @@ public class Solution {
 		Node n2 = new Node();
 		n2.data = 3;
 		n2.next = n;
+		n1.next = n2;
 
 		System.out.println(new Solution().hasCycle(root));
 	}
@@ -32,13 +33,11 @@ public class Solution {
 		boolean hasCycle = false;
 
 		Node slowPinter = head;
+		if (head == null)
+			return false;
 		Node fastPointer = head.next != null ? head.next : null;
 
 		while (!hasCycle) {
-			System.out.println("A");
-			System.out.println(slowPinter);
-			System.out.println(fastPointer);
-			System.out.println("A");
 			if (slowPinter == null || fastPointer == null)
 				break;
 
